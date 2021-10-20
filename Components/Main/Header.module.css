@@ -8,7 +8,7 @@
 }
 @media (max-width: 600px) {
     .Header {
-        width:82% ;
+        width:100% ;
         /* border: 1px solid black; */
      display: flex;
      flex-direction: column;
@@ -55,8 +55,7 @@
     font-size: 25px;
     font-weight: 600;
     height: 50px;
-    
-    width:300px;
+    width:320px;
 }
 span {
     font-size: inherit;
