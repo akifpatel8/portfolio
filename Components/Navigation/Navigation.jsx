@@ -5,11 +5,15 @@ function Navigation({ Link, router }) {
   return (
     <div className={Styles.Navigation}>
       <div className={Styles.Navigation__logo}>
-        <img className={Styles.logo} src="/Alogo.jpeg" alt="" />
+        <img
+          className={Styles.logo}
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/adonisjs/adonisjs-original.svg"
+          alt=""
+        />
       </div>
       <div className={Styles.Navigation__items}>
-        {router.map((item) => (
-          <div>
+        {router.map((item,i) => (
+           <div key={i}>
             <Link activeClass="activeTab" spy={true} smooth={true} to={item.to}>
               {item.to}
             </Link>
@@ -17,7 +21,7 @@ function Navigation({ Link, router }) {
         ))}
         <div className={Styles.Navigation__resume}>
           <a
-            href="https://drive.google.com/file/d/1E5Aeb8zYfXUYlPt3bR8oTGv2csNefdSg/view?usp=sharing"
+            href="https://drive.google.com/file/d/1ziSufH7PKunFo6HCb4pdNXPUU0zqN9JV/view?usp=sharing"
             target="_blank"
           >
             Resume
